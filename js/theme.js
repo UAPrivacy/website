@@ -84,7 +84,7 @@ function BannerSlider() {
     banner.camera({ //here I declared some settings, the height and the presence of the thumbnails 
       height: '1000px',
       pagination: false,
-      navigation: true,
+      navigation: false,
       thumbnails: false,
       playPause: false,
       pauseOnClick: false,
@@ -93,7 +93,7 @@ function BannerSlider() {
       overlayer: true,
       loader: 'none',
       minHeight: '700px',
-      time: 6000,
+      time: 1000000,
     });
   };
 }
