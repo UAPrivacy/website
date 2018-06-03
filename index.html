@@ -28,37 +28,39 @@
 
 <body>
 	<!-- slideshow -->
-	<div class="uk-inline uk-dark">
-		<img src="./images/pic5-cropped.jpg" alt="">
-		<div class="uk-overlay-default uk-position-cover"></div>
-		<div class="uk-visible@s uk-overlay uk-position-top uk-flex uk-flex-middle uk-flex-between">
-			<div>
-				<img src="./images/logo.png" width="200"> </div>
-			<div>
-				<p uk-margin>
-					<a class="uk-button" href="#contact">contact</a>
-					<a class="uk-button" href="#about">about</a>
-				</p>
+	<header>
+		<div class="uk-inline uk-dark">
+			<img src="./images/pic5-cropped.jpg" alt="">
+			<div class="uk-overlay-default uk-position-cover"></div>
+			<div class="uk-visible@s uk-overlay uk-position-top uk-flex uk-flex-middle uk-flex-between">
+				<div>
+					<img src="./images/logo.png" width="200"> </div>
+				<div>
+					<p uk-margin>
+						<a class="uk-button" href="#contact">contact</a>
+						<a class="uk-button" href="#about">about</a>
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="uk-overlay uk-position-center-left">
-			<div>
-				<h1>Making Terms &amp;
-					<br> Privacy Understandable
-				</h1>
-				<p>Highlighting the important bits of Privacy Policy &amp;
-					<br> User Agreements for the website you're browsing.</p>
+			<div class="uk-overlay uk-position-center-left">
+				<div>
+					<h1>Making Terms &amp;
+						<br> Privacy Understandable
+					</h1>
+					<p>Highlighting the important bits of Privacy Policy &amp;
+						<br> User Agreements for the website you're browsing.</p>
 
-				<p uk-margin>
-					<a class="uk-button uk-button-primary" href="#">
-						Download
-						<span class="uk-text-bold">FREE</span>
-						<sup class="uk-text-small">BETA</sup>
-					</a>
-				</p>
+					<p uk-margin>
+						<a class="uk-button uk-button-primary" href="#">
+							Download
+							<span class="uk-text-bold">FREE</span>
+							<sup class="uk-text-small">BETA</sup>
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 
 	<div class="uk-section uk-section-default">
 		<div class="uk-container uk-text-center">
@@ -154,7 +156,8 @@
 					<img src="images/icon4.png" class="uk-width-medium" alt=" ">
 				</div>
 				<div class="uk-text-left">
-					<h2 class="uk-text-muted">Be aware what you sign up for</h2>
+					<h2 class="uk-text-muted">Be aware what terms you agree to
+					</h2>
 					<p>
 						Know their User Agreements.
 						<em>Easily</em>.
@@ -188,29 +191,59 @@
 	</div>
 
 
+	<div class="uk-section uk-section-default">
+		<div class="uk-container">
 
-	<h2 class="uk-text-uppercase uk-text-muted uk-text-center">contact us</h2>
-	<form>
+			<h2 class="uk-text-muted uk-text-center">Subscribe to stay updated!</h2>
 
-		<div class="uk-margin">
-			<div class="uk-inline">
-				<span class="uk-form-icon" uk-icon="icon: user"></span>
-				<input class="uk-input" type="text">
+
+			<form class="uk-grid-small uk-child-width-1-3@s" uk-grid>
+
+				<div>
+					<input class="uk-input uk-form-large" type="text" name="name" placeholder="Full Name*"
+					    required>
+				</div>
+
+				<div>
+					<input class="uk-input uk-form-large" type="text" name="email" placeholder="Email Address*"
+					    required>
+				</div>
+
+				<div>
+					<input class="uk-button  uk-button-large uk-button-primary" type="submit" name="subscribe"
+					    value="Sign Up">
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="uk-section uk-section-muted uk-section-small">
+			<div class="uk-container">
+				<div class="uk-flex uk-flex-middle uk-flex-between uk-text-meta">
+					<div>
+						All Rights Reserved 2018 © UAPrivacy.
+					</div>
+					<div>
+						<ul class="uk-iconnav">
+							<li>
+								<a href="#" uk-icon="icon: facebook"></a>
+							</li>
+							<li>
+								<a href="#" uk-icon="icon: twitter"></a>
+							</li>
+							<li>
+								<a href="#" uk-icon="icon: youtube"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div class="uk-margin">
-			<div class="uk-inline">
-				<span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-				<input class="uk-input" type="text">
-			</div>
-		</div>
-
-	</form>
-
-
-
-
+	</footer>
 
 </body>
 
