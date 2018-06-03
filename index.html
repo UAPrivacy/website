@@ -16,8 +16,8 @@
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" />
 	<!-- UIkit JS -->
-	<script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
-	<script src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+	<script defer src="./node_modules/uikit/dist/js/uikit.min.js"></script>
+	<script defer src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,29 +29,31 @@
 <body>
 	<!-- slideshow -->
 	<div class="uk-inline uk-light">
-		<img src="./images/pic1.jpg" alt="">
+		<img src="./images/pic5-cropped.jpg" alt="">
 		<div class="uk-overlay-primary uk-position-cover"></div>
 		<div class="uk-visible@s uk-overlay uk-position-top uk-flex uk-flex-middle uk-flex-between">
 			<div>
 				<img src="./images/logo.png" width="200"> </div>
 			<div>
 				<p uk-margin>
-					<a class="uk-button" href="#">Contact</a>
-					<a class="uk-button uk-button-default" href="#">About</a>
+					<a class="uk-button" href="#contact">Contact</a>
+					<a class="uk-button uk-button-default" href="#about">About</a>
 				</p>
 			</div>
 		</div>
 		<div class="uk-overlay uk-position-center-left">
 			<div>
-				<h5>Simply Convenient</h5>
+				<h5 class="uk-margin-remove-adjacent uk-margin-small">Simple.</h5>
 				<h1>Making Privacy
 					<br> Understandable</h1>
 				<p>Highlighting the important bits of Privacy Policy &amp;
 					<br> User Agreements for the website you're browsing.</p>
 
 				<p uk-margin>
-					<a class="uk-button uk-button-default" href="#">Download FREE
-						<sup>BETA</sup>
+					<a class="uk-button uk-button-primary" href="#">
+						Download
+						<span class="uk-text-bold">FREE</span>
+						<sup class="uk-text-small">BETA</sup>
 					</a>
 				</p>
 			</div>
@@ -60,41 +62,66 @@
 
 	<div class="uk-section uk-section-default">
 		<div class="uk-container uk-text-center">
-			<h2 class="uk-text-capitalize">what we do</h2>
+			<h2 class="uk-text-uppercase uk-text-muted">what we do</h2>
 
 			<div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-				<div>
-					<img src="images/icon1.png" alt="">
-					<h3>Simplify</h3>
-					<p>We replace legal jargon
-						<br>with familiar words.</p>
-				</div>
 
 				<div>
-					<img src="images/icon2.png" alt="">
-					<h3>Shorten</h3>
-					<p>We summarize what's
-						<br>commonly important.</p>
+					<div class="uk-card">
+						<div class="uk-card-media-top">
+							<img src="images/icon1.png" class="uk-width-small" alt=" ">
+						</div>
+						<div class="uk-card-body ">
+							<h3 class="uk-card-title ">Simplify</h3>
+							<p>We replace legal jargon
+								<br> with familiar words.</p>
+						</div>
+					</div>
 				</div>
+
+
 				<div>
-					<img src="images/icon3.png" alt="">
-					<h3>Present</h3>
-					<p>We highlight conveniently
-						<br>and non-intrusively.</p>
+					<div class="uk-card ">
+						<div class="uk-card-media-top ">
+							<img src="images/icon2.png " class="uk-width-small" alt=" ">
+						</div>
+						<div class="uk-card-body ">
+							<h3 class="uk-card-title ">Shorten</h3>
+							<p>We summarize what's
+								<br>commonly important.</p>
+						</div>
+					</div>
 				</div>
+
+
+				<div>
+					<div class="uk-card ">
+						<div class="uk-card-media-top ">
+							<img src="images/icon3.png " class="uk-width-small" alt=" ">
+						</div>
+						<div class="uk-card-body ">
+							<h3 class="uk-card-title ">Present</h3>
+							<p>We highlight conveniently
+								<br>and non-intrusively.</p>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</div>
 
 
-	<div class="uk-section uk-section-default">
-		<div class="uk-container uk-text-center">
-			<h2 class="uk-text-capitalize">what you get</h2>
+	<div class="uk-section uk-section-default ">
+		<div class="uk-container uk-text-center ">
+			<h2 class="uk-text-uppercase uk-text-muted">what you get</h2>
 
-			<div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+			<div class="uk-grid-match uk-child-width-1-3@m " uk-grid>
 
 				<div>
-					<p>Available when needed
+					<p>
+						Available when needed
 					</p>
 				</div>
 				<div>
@@ -111,14 +138,14 @@
 
 
 
-	<div class="uk-section uk-section-default">
-		<div class="uk-container uk-text-center">
-			<div class="uk-child-width-1-3@m" uk-grid>
+	<div class="uk-section uk-section-default ">
+		<div class="uk-container">
+			<div class="uk-flex uk-flex-middle uk-flex-between">
 				<div>
-					<img src="images/icon4.png" alt="">
+					<img src="images/icon4.png" class="uk-width-medium" alt=" ">
 				</div>
-				<div>
-					<h2 class="uk-text-capitalize">Know what you've sign up for</h2>
+				<div class="uk-text-left">
+					<h2 class="uk-text-muted">Be aware of what you sign up for</h2>
 					<p>
 						Know their User Agreements. Easily.
 					</p>
