@@ -178,36 +178,30 @@
 
 	<div class="uk-section uk-section-secondary">
 		<div class="uk-container">
-			<div class="uk-flex uk-flex-middle uk-flex-between">
+			<h2 class="uk-text-uppercase uk-text-muted uk-text-center">contact us</h2>
+			<div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
 				<div>
-
 					<form class="uk-form-stacked">
 
 						<div class="uk-margin">
-							<label class="uk-form-label" for="form-stacked-text">Text</label>
+							<label class="uk-form-label" for="email">Email Address</label>
 							<div class="uk-form-controls">
-								<input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+								<input class="uk-input" id="email" type="email" name="email" required placeholder="Email Address*">
+							</div>
+						</div>
+						<div class="uk-margin">
+							<label class="uk-form-label" for="subject">Subject</label>
+							<div class="uk-form-controls">
+								<input class="uk-input" id="subject" type="text" name="subject" required placeholder="Subject*">
 							</div>
 						</div>
 
 						<div class="uk-margin">
-							<label class="uk-form-label" for="form-stacked-select">Select</label>
+							<label class="uk-form-label" for="message">Your Message</label>
 							<div class="uk-form-controls">
-								<select class="uk-select" id="form-stacked-select">
-									<option>Option 01</option>
-									<option>Option 02</option>
-								</select>
-							</div>
-						</div>
 
-						<div class="uk-margin">
-							<div class="uk-form-label">Radio</div>
-							<div class="uk-form-controls">
-								<label>
-									<input class="uk-radio" type="radio" name="radio1"> Option 01</label>
-								<br>
-								<label>
-									<input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+								<textarea class="uk-textarea" id="message" rows="5" placeholder="Textarea" placeholder="Your Message"></textarea>
+
 							</div>
 						</div>
 
@@ -220,7 +214,9 @@
 
 					<h5>We'll respond within 24hours</h5>
 
-					<h4>info@uaprivacy.com</h4>
+					<h4>
+						<a href="mailto:info@uaprivacy.com">info@uaprivacy.com</a>
+					</h4>
 
 				</div>
 			</div>
