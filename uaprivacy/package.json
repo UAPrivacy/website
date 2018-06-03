@@ -1,5 +1,5 @@
 {
-  "name": "uaprivacy-beta",
+  "name": "website",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -7,7 +7,9 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "uikit": "^3.0.0-rc.4"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
   },
