@@ -1,8 +1,12 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "",
+  "description": "website",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UAPrivacy/website.git"
+  },
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
@@ -13,5 +17,6 @@
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "keywords": [],
+  "license": "MIT"
 }
