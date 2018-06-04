@@ -35,21 +35,25 @@
 		<div class="uk-inline uk-light">
 			<img src="./images/pic5-cropped.jpg" alt="" uk-scrollspy="cls: uk-animation-slide-top-small">
 			<div class="uk-overlay-primary uk-position-cover"></div>
-			<div class="uk-overlay uk-position-top uk-flex uk-flex-middle uk-flex-between">
+			<div class="uk-overlay uk-position-top uk-flex uk-flex-center uk-flex-left@m">
 
 				<a class="uk-logo" href="#">
 					<img src="./images/logo.png" width="200" alt="">
 				</a>
 
 			</div>
-			<div class="uk-overlay uk-position-left  uk-flex uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
+
+			<div class="uk-hidden@m uk-overlay uk-position-bottom" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
+				<h1 class="uk-h3 uk-text-center">Making User Agreements Understandable
+				</h1>
+			</div>
+			<div class="uk-visible@m uk-overlay uk-position-left  uk-flex uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
 				<div>
 					<h6 class="uk-text-meta uk-text-uppercase uk-margin-remove-adjacent uk-margin-small-bottom">coming soon</h6>
 					<h1 class="uk-heading-primary">Making User Agreements
 						<br> Understandable
 					</h1>
 					<p class="uk-text-lead">
-
 						Highlighting the important bits of User Agreements
 						<br> &amp; Privacy Policy for the website you're browsing.</p>
 
@@ -63,7 +67,7 @@
 	<div class="uk-section uk-section-muted uk-section-large">
 		<div class="uk-container uk-text-center">
 
-			<h2 class="uk-heading-line uk-text-center uk-text-uppercase uk-text-muted uk-h3">
+			<h2 class="uk-heading-line uk-text-center uk-text-uppercase">
 				<span>what we do</span>
 			</h2>
 
@@ -122,12 +126,12 @@
 	<div class="uk-section uk-section-muted">
 		<div class="uk-container uk-text-center ">
 
-			<h2 class="uk-heading-line uk-text-center uk-text-uppercase uk-text-muted uk-h3">
+			<h2 class="uk-heading-line uk-text-center uk-text-uppercase">
 				<span>what you get</span>
 			</h2>
 
 
-			<div class="uk-grid-match uk-grid-divider uk-child-width-1-3@m " uk-grid uk-scrollspy="cls: uk-animation-slide-top">
+			<div class="uk-grid-match uk-child-width-1-3@m " uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: > div > p; delay: 500">
 
 				<div>
 					<p>
@@ -156,14 +160,14 @@
 	<!-- BE AWARE -->
 
 	<div class="uk-section uk-section-muted uk-section-large">
-		<div class="uk-container">
-			<div class="uk-flex uk-flex-middle uk-flex-between">
+		<div class="uk-container uk-text-center">
+			<div class="uk-child-width-1-2@m" uk-grid>
 				<div uk-scrollspy="cls: uk-animation-slide-left" class="uk-transition-toggle">
 					<img src="images/icon4.png" class="uk-width-medium uk-transition-scale-up uk-transition-opaque"
 					    alt=" ">
 				</div>
 				<div class="uk-text-left" uk-scrollspy="cls: uk-animation-slide-bottom">
-					<h2 class="uk-text-muted uk-heading-bullet">Be aware what terms you agree to
+					<h2 class="uk-text-muted uk-heading-bullet uk-text-center uk-text-left@m">Be aware what terms you agree to
 					</h2>
 					<p>
 						<span uk-icon="icon: check; ratio: 2"></span>
@@ -206,14 +210,14 @@
 	<!-- ENGAGE -->
 	<div class="uk-section uk-section-secondary uk-section-large uk-light">
 		<div class="uk-container">
-			<h1 class="uk-text-muted uk-text-center uk-margin-large-bottom">Engage with legal policies as you browse</h1>
+			<h1 class="uk-text-center uk-margin-large-bottom">Engage with legal policies as you browse</h1>
 
-			<div uk-grid class="uk-flex-center uk-transition-toggle" uk-scrollspy="cls: uk-animation-slide-top">
+			<div uk-grid class="uk-flex-center@m uk-transition-toggle" id="padding-fix" uk-scrollspy="cls: uk-animation-slide-top">
 				<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Highlights of Privacy &amp; User Agreements
 				</p>
 			</div>
 			<div uk-grid>
-				<div class="uk-child-width-1-1 uk-flex-center uk-text-right" uk-grid uk-scrollspy="cls: uk-animation-slide-left">
+				<div class="uk-child-width-1-1 uk-flex-center uk-text-right@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left">
 					<div class="uk-transition-toggle">
 						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Made simple</p>
 					</div>
@@ -221,7 +225,7 @@
 						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Presented conveniently</p>
 					</div>
 				</div>
-				<div class="uk-width-expand" uk-scrollspy="cls: uk-animation-slide-bottom">
+				<div class="uk-width-expand uk-visible@m" uk-scrollspy="cls: uk-animation-slide-bottom">
 					<img src="images/pic6.jpg" alt="">
 				</div>
 				<div class="uk-child-width-1-1 uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-slide-right">
@@ -244,17 +248,17 @@
 
 			<form class="uk-grid-small" uk-grid>
 
-				<div class="uk-width-expand">
+				<div class="uk-width-expand@m">
 					<input class="uk-input uk-form-large" type="text" name="name" placeholder="Full Name*"
 					    required>
 				</div>
 
-				<div class="uk-width-expand">
+				<div class="uk-width-expand@m">
 					<input class="uk-input uk-form-large" type="text" name="email" placeholder="Email Address*"
 					    required>
 				</div>
 
-				<div class="uk-width-auto">
+				<div class="uk-width-auto@m">
 					<input class="uk-button uk-button-large uk-button-primary uk-text-uppercase" type="submit"
 					    value="sign up">
 				</div>
@@ -402,7 +406,7 @@
 					</form>
 
 				</div>
-				<div class="uk-text-left">
+				<div class="uk-text-left@m uk-text-center">
 					<h2 class="uk-text-muted">Don’t hesitate to get in touch
 					</h2>
 
@@ -448,7 +452,7 @@
 			<div class="uk-container">
 				<div class="uk-flex uk-flex-middle uk-flex-between uk-text-meta">
 					<div>
-						© Copyright UAPrivacy 2018.
+						© Copyright UAPrivacy 2018
 					</div>
 					<div>
 						<ul class="uk-iconnav">

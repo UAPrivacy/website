@@ -5,3 +5,9 @@
 .gradient {
     background: linear-gradient(to right, #E94057, #F27121, #F27121);
 }
+
+@media only screen and (max-width: 960px) {
+    #padding-fix {
+        margin-left: 0px
+    }
+}
