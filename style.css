@@ -1,0 +1,12 @@
+.shrink,
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.shrink:hover {
+    transform: scale(0.9);
+}
+
+.grow:hover {
+    transform: scale(1.1)
+}
