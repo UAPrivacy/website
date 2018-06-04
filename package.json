@@ -8,7 +8,7 @@
     "url": "https://github.com/UAPrivacy/website.git"
   },
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
