@@ -30,7 +30,7 @@
 	<!-- slideshow -->
 	<header>
 		<div class="uk-inline uk-dark">
-			<img src="./images/pic5-cropped.jpg" alt="" uk-scrollspy="cls: uk-animation-fade">
+			<img src="./images/pic5-cropped.jpg" alt="" uk-scrollspy="cls: uk-animation-slide-top-small">
 			<div class="uk-overlay-default uk-position-cover"></div>
 			<div class="uk-visible@s uk-overlay uk-position-top uk-flex uk-flex-middle uk-flex-between">
 				<div>
@@ -43,7 +43,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="uk-overlay uk-position-center-left" uk-scrollspy="cls: uk-animation-slide-left-small">
+			<div class="uk-overlay uk-position-center-left" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 400">
 				<div>
 					<h1 class="uk-heading-primary">Making User Agreements
 						<br> Understandable
@@ -63,11 +63,11 @@
 		</div>
 	</header>
 
-	<div class="uk-section uk-section-default">
+	<div class="uk-section uk-section-default uk-section-large">
 		<div class="uk-container uk-text-center">
 			<h2 class="uk-text-uppercase uk-text-muted">what we do</h2>
 
-			<div class="uk-grid-match uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left-small; target: > div > .uk-card; delay: 500">
+			<div class="uk-grid-match uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left-small; target: > div > .uk-card; delay: 400">
 
 				<div>
 					<div class="uk-card uk-box-shadow-hover-medium">
@@ -117,11 +117,11 @@
 
 	<hr class="uk-divider-icon">
 
-	<div class="uk-section uk-section-default ">
+	<div class="uk-section uk-section-default uk-section-large">
 		<div class="uk-container uk-text-center ">
 			<h2 class="uk-text-uppercase uk-text-muted">what you get</h2>
 
-			<div class="uk-grid-match uk-grid-divider uk-child-width-1-3@m " uk-grid>
+			<div class="uk-grid-match uk-grid-divider uk-child-width-1-3@m " uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small">
 
 				<div>
 					<p>
@@ -149,13 +149,13 @@
 
 
 
-	<div class="uk-section uk-section-muted ">
+	<div class="uk-section uk-section-muted uk-section-large">
 		<div class="uk-container">
 			<div class="uk-flex uk-flex-middle uk-flex-between">
 				<div uk-scrollspy="cls: uk-animation-slide-left">
 					<img src="images/icon4.png" class="uk-width-medium" alt=" ">
 				</div>
-				<div class="uk-text-left" uk-scrollspy="cls: uk-animation-slide-right-small">
+				<div class="uk-text-left" uk-scrollspy="cls: uk-animation-slide-bottom">
 					<h2 class="uk-text-muted">Be aware what terms you agree to
 					</h2>
 					<p>
@@ -179,8 +179,8 @@
 
 
 
-	<div class="uk-section uk-section-primary uk-light">
-		<div class="uk-container">
+	<div class="uk-section uk-section-primary uk-section-large uk-light">
+		<div class="uk-container" uk-scrollspy="cls: uk-animation-fade; target: > * ; delay: 500">
 			<h1 class="uk-text-capitalize uk-text-center">our philosophy</h1>
 			<p class="uk-dropcap uk-text-justify" style="color: rgba(255, 255, 255, 0.9)">
 				The assumption that most people do not care about User Agreements or Privacy Policies
@@ -221,14 +221,14 @@
 	</div>
 
 
-	<div class="uk-section uk-section-muted ">
-		<div class="uk-container uk-text-center ">
+	<div class="uk-section uk-section-muted uk-section-large">
+		<div class="uk-container uk-text-center">
 
 			<h1 class="uk-heading-line uk-text-center">
 				<span>Team</span>
 			</h1>
 
-			<div class="uk-grid-match uk-child-width-1-2@m " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 300">
+			<div class="uk-grid-match uk-child-width-1-2@m " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 400">
 				<div>
 					<div class="uk-card" uk-card-default>
 						<div class="uk-card-header">
@@ -254,9 +254,6 @@
 
 					</div>
 				</div>
-
-
-
 
 				<div>
 					<div class="uk-card" uk-card-default>
@@ -289,7 +286,7 @@
 		</div>
 	</div>
 
-	<div class="uk-section uk-section-secondary uk-light">
+	<div class="uk-section uk-section-secondary uk-section-large uk-light">
 		<div class="uk-container">
 			<h1 class="uk-text-capitalize uk-text-center">contact us</h1>
 			<div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
@@ -343,7 +340,7 @@
 	</div>
 
 	<div class="uk-section uk-section-muted">
-		<div class="uk-container">
+		<div class="uk-container" uk-scrollspy="uk-animation-shake">
 			<h1 class="uk-text-capitalize uk-text-center">legal disclaimer</h1>
 			<p class="uk-text-justify uk-text-meta">
 				By installing our software you agree that reading the simplified summary of documents
@@ -359,8 +356,9 @@
 	</div>
 
 	<hr class="uk-divider-icon uk-background-muted uk-margin-remove">
+
 	<footer>
-		<div class="uk-section uk-section-muted uk-section-small">
+		<div class="uk-section uk-section-muted uk-section-small uk-dark">
 			<div class="uk-container">
 				<div class="uk-flex uk-flex-middle uk-flex-between uk-text-meta">
 					<div>
@@ -381,7 +379,10 @@
 					</div>
 
 					<div>
-						<a href="#" uk-totop uk-scroll></a>
+						<p>
+							<a href="#" uk-totop uk-scroll></a>
+						</p>
+
 					</div>
 				</div>
 			</div>
