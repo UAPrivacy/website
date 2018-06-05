@@ -8,13 +8,14 @@
     "url": "https://github.com/UAPrivacy/website.git"
   },
   "scripts": {
-    // "start": "parcel index.html",
+    "start": "serve .",
     "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
     "uikit": "^3.0.0-rc.4"
   },
   "devDependencies": {
+    "serve": "latest",
     "parcel-bundler": "^1.6.1"
   },
   "keywords": [],
