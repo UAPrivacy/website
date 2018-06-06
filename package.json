@@ -9,7 +9,9 @@
   },
   "scripts": {
     "start": "serve .",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./",
+    "dev": "parcel index.html",
+    "dev-open": "parcel index.html --open"
   },
   "dependencies": {
     "uikit": "^3.0.0-rc.4"
