@@ -2,7 +2,7 @@ node_modules
 dist
 .cache
 
-# OS generated files #
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -10,3 +10,6 @@ dist
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# other
+.vscode/
