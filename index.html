@@ -52,13 +52,24 @@
 				</div>
 			</div>
 			<!-- TODO -->
-			<!-- <div class="uk-visible@l uk-position-right uk-overlay uk-overlay-primary uk-flex uk-flex-middle">
-				<img src="./images/icon15.png" width="400" alt="" uk-scrollspy="cls: uk-animation-slide-right; delay: 1000">
-			</div> --></div>
+			<div class="uk-visible@l uk-position-right uk-overlay uk-overlay-primary uk-flex  uk-flex-center uk-flex-column uk-flex-middle uk-text-center">
+				<div>
+					<img src="./images/racoon-logo-light.png" width="400" alt="" uk-scrollspy="cls: uk-animation-slide-right; delay: 500">
+				</div>
+				<div uk-scrollspy="cls: uk-animation-fade; delay: 1000; target: > p">
+					<p class="uk-text-lead">User-friendly legal policies</p>
+
+					<p class="uk-text-small">
+						Clarifying understanding and expectations
+						<br> between users and companies.
+					</p>
+				</div>
+
+			</div>
+		</div>
 	</header>
+
 	<!-- WHAT WE DO -->
-
-
 	<div class="uk-section uk-section-muted uk-section-large">
 		<div class="uk-container uk-text-center">
 			<h2 class="uk-heading-line uk-text-center uk-text-uppercase">
@@ -139,10 +150,37 @@
 	<!-- BE AWARE -->
 	<div class="uk-section uk-section-default uk-section-large">
 		<div class="uk-container uk-text-center">
-			<div class="uk-child-width-1-2@m" uk-grid>
-				<div uk-scrollspy="cls: uk-animation-slide-left" class="uk-transition-toggle">
+
+			<div class="uk-child-width-1-2@m uk-hidden@m" uk-grid>
+				<div class="uk-transition-toggle">
 					<img src="images/icon4.png" class="uk-width-medium uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
-				<div uk-scrollspy="cls: uk-animation-slide-right uk-text-left@m">
+				<div class="uk-text-left@m">
+					<h2 class="uk-text-muted uk-heading-bullet uk-text-left@m">
+						Be aware what terms you agree to
+					</h2>
+					<p>
+						<span uk-icon="icon: check; ratio: 2"></span>
+						Know their User Agreements.
+						<em>Easily</em>.
+					</p>
+					<p>
+						<span uk-icon="icon: check; ratio: 2"></span>
+						Know their Privacy Policy.
+						<em>Conveniently</em>.
+					</p>
+					<p>
+						<span uk-icon="icon: check; ratio: 2"></span>
+						Know their Terms of Service.
+						<em>Quickly</em>.</p>
+				</div>
+			</div>
+
+			<div class="uk-child-width-1-2@m uk-visible@m" uk-grid>
+				<div class="uk-transition-toggle">
+					<img src="images/icon4.png" class="uk-width-medium uk-transition-scale-up uk-transition-opaque" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
+				</div>
+
+				<div uk-scrollspy="cls: uk-animation-slide-right" class="uk-text-left@m">
 					<h2 class="uk-text-muted uk-heading-bullet uk-text-left@m">
 						Be aware what terms you agree to
 					</h2>
@@ -213,8 +251,33 @@
 					</div>
 				</div>
 			</div>
+			<div class="uk-hidden@m uk-margin-large-top uk-width-auto" uk-scrollspy="target: > div > p; cls:uk-animation-fade; delay: 300">
+				<div>
+					<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Highlights of Privacy &amp; User Agreements
+					</p>
+				</div>
+				<div>
+					<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Made simple
+					</p>
+				</div>
+
+				<div>
+					<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Presented conveniently
+					</p>
+				</div>
+
+				<div>
+					<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Up-to-date</p>
+				</div>
+
+				<div>
+					<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Whenever you need them
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
+
 	<!-- SUBSCRIBE -->
 	<div class="uk-section uk-section-default uk-section-large" id="subscribe-section">
 		<div class="uk-container">
@@ -269,7 +332,7 @@
 			<h2 class="uk-heading-line uk-text-muted uk-text-uppercase uk-h3">
 				<span>Team</span>
 			</h2>
-			<div class="uk-grid-match uk-child-width-1-2@m " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 400">
+			<div class="uk-grid-match uk-child-width-1-2@m " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > div.uk-card > div.uk-card-header > div > img; delay: 300">
 				<div>
 					<div class="uk-card" uk-card-default>
 						<div class="uk-card-header">
