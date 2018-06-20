@@ -51,7 +51,7 @@
 						Highlighting the important bits of User Agreements
 						<br> &amp; Privacy Policy for the website you're browsing.
 					</p>
-					<button class="uk-button uk-button-danger uk-text-uppercase">
+					<button class="uk-button uk-button-danger uk-text-uppercase" hidden>
 						<i class="fab fa-chrome fa-fw"></i> Download free beta</button>
 
 				</div>
@@ -74,7 +74,6 @@
 			</div>
 		</div>
 	</header>
-
 	<!-- WHAT WE DO -->
 	<div class="uk-section uk-section-muted">
 		<div class="uk-container uk-text-center ">
@@ -176,9 +175,10 @@
 			</div>
 
 			<div class="uk-child-width-1-2@m uk-visible@m" uk-grid>
-				<div>
-					<img src="images/icon4.png" class="uk-width-medium" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
-
+				<div class="uk-transition-toggle">
+					<div class="uk-transition-scale-up uk-transition-opaque">
+						<img src="images/icon4.png" class="uk-width-medium" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
+					</div>
 				</div>
 
 				<div uk-scrollspy="cls: uk-animation-slide-right" class="uk-text-left@m">
@@ -275,7 +275,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- SUBSCRIBE -->
 	<div class="uk-section uk-section-default uk-section-large" hidden>
 		<div class="uk-container">
@@ -408,7 +407,6 @@
 
 			</div>
 		</div>
-	</div>
 	</div>
 	<!-- LEGAL DISCLAIMER -->
 	<div class="uk-section uk-section-default">
