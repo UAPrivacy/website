@@ -401,8 +401,8 @@
 					<strong>24</strong>
 					hours</h5>
 				<h4>
-					<a href="mailto:info@uaprivacy.com">info@uaprivacy.com</a>
-					<a uk-icon="copy" id="email-tooltip" data-clipboard-text="info@uaprivacy.com" uk-tooltip="Copy to clipboard"></a>
+					<a href="mailto:info@uaprivacy.com" id="email">info@uaprivacy.com</a>
+					<a uk-icon="copy" id="email-tooltip" data-clipboard-target="#email"></a>
 				</h4>
 
 			</div>
@@ -477,22 +477,24 @@
 	<script>
 		document.addEventListener("DOMContentLoaded", function (event) {
 			const emailTooltipEl = document.getElementById("email-tooltip");
-			const clipboard = new Clipboard('#email-tooltip');
+			const clipboard = new Clipboard("#email-tooltip");
 			clipboard.on('error', function (e) {
 				console.log(e);
 			});
 			clipboard.on('success', function (e) {
 				UIkit.tooltip(emailTooltipEl, {
-					title: "Copied: info@uaprivacy.com"
+					title: "Copied: " + e.text
 				}).show()
-				console.log(e);
+				e.clearSelection();
 			});
-			emailTooltipEl.addEventListener('click', function (e) {
-				// UIkit.tooltip(emailTooltipEl).hide()
+			emailTooltipEl.onmouseover = function (e) {
 				UIkit.tooltip(emailTooltipEl, {
-					title: "Copied: info@uaprivacy.com"
+					title: "Copy to clipboard"
 				}).show()
-			});
+			}
+			emailTooltipEl.onmouseout = function (e) {
+				UIkit.tooltip(emailTooltipEl, {}).hide()
+			}
 		});
 
 	</script>
