@@ -10,9 +10,8 @@
   "scripts": {
     "start": "serve .",
     "build": "parcel build index.html --public-url ./",
-    "dev": "parcel ./index-copy.html",
-    "clear": "rm -rf dist/ .cache",
-    "optimize-images": "magick convert ./images"
+    "dev": "parcel index.html",
+    "clear": "rm -rf dist/ .cache"
   },
   "dependencies": {
     "uikit": "^3.0.0-rc.5"
