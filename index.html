@@ -12,7 +12,8 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/fav-icon.png">
 	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" />
+	<link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" as="style">
+	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" as="style">
 	<!-- local styles -->
 	<link rel="stylesheet" href="./style.css">
 	<!-- Fix Internet Explorer ______________________________________-->
@@ -26,8 +27,10 @@
 <body>
 	<!-- HEADER -->
 	<header>
-		<div class="uk-inline uk-light">
-			<img src="./images/pic5-cropped.jpg" alt="" uk-scrollspy="cls: uk-animation-slide-top-small">
+		<div class="uk-cover-container uk-inline uk-light">
+			<!-- hack -->
+			<canvas width="19200" height="10000"></canvas>
+			<img src="./images/pic5-cropped.jpg" alt="" uk-cover>
 			<div class="uk-overlay-primary uk-position-cover"></div>
 			<div class="uk-overlay uk-position-top uk-flex uk-flex-center uk-flex-left@m">
 				<a class="uk-logo" href="/">
@@ -40,9 +43,7 @@
 			</div>
 			<div class="uk-visible@m uk-overlay uk-position-left uk-flex uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
 				<div>
-					<h6 class="uk-text-meta uk-text-uppercase uk-margin-remove-adjacent uk-margin-small-bottom">
-						<em>coming soon</em>
-					</h6>
+
 					<h1 class="uk-heading-primary font-weight-200">Making User Agreements
 						<br> Understandable
 					</h1>
@@ -50,6 +51,10 @@
 						Highlighting the important bits of User Agreements
 						<br> &amp; Privacy Policy for the website you're browsing.
 					</p>
+					<button class="uk-button uk-button-danger uk-text-uppercase">
+						<i class="fab fa-chrome fa-fw"></i>
+						Download free beta</button>
+
 				</div>
 			</div>
 
@@ -61,7 +66,7 @@
 				<div>
 					<p class="uk-text-lead ">User-friendly legal policies</p>
 
-					<p class="uk-text-small ">
+					<p class="uk-h5 font-weight-200">
 						Clarifying understanding and expectations
 						<br> between users and companies.
 					</p>
@@ -178,8 +183,10 @@
 			</div>
 
 			<div class="uk-child-width-1-2@m uk-visible@m" uk-grid>
-				<div class="uk-transition-toggle">
+				<div>
+
 					<img src="images/icon4.png" class="uk-width-medium uk-transition-scale-up uk-transition-opaque" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
+
 				</div>
 
 				<div uk-scrollspy="cls: uk-animation-slide-right" class="uk-text-left@m">
@@ -281,7 +288,7 @@
 	</div>
 
 	<!-- SUBSCRIBE -->
-	<div class="uk-section uk-section-default uk-section-large" id="subscribe-section">
+	<div class="uk-section uk-section-default uk-section-large" hidden>
 		<div class="uk-container">
 			<h1 class="uk-text-center">Subscribe to stay updated!
 			</h1>
@@ -299,7 +306,7 @@
 		</div>
 	</div>
 	<!-- COUNTDOWN -->
-	<div class="uk-section uk-section-secondary uk-section-large uk-light">
+	<div class="uk-section uk-section-default uk-section-large">
 		<div class="uk-container">
 			<h5 class="uk-text-uppercase uk-text-center">Countdown to
 				<b>FREE</b>
@@ -391,7 +398,7 @@
 		</div>
 	</div>
 	<!-- CONTACT US -->
-	<div class="uk-section uk-section-primary uk-section-large uk-light">
+	<div class="uk-section uk-section-primary uk-light">
 		<div class="uk-container">
 			<h1 class="uk-text-capitalize uk-text-center">contact us
 			</h1>
@@ -404,9 +411,7 @@
 
 					We'll respond within
 					<strong>24</strong>
-					hours
-
-				</h5>
+					hours</h5>
 				<h4>
 					<a href="mailto:info@uaprivacy.com">info@uaprivacy.com</a>
 					<a href="" uk-icon="copy"></a>
@@ -422,12 +427,11 @@
 			<h1 class="uk-text-capitalize uk-text-center">legal disclaimer
 			</h1>
 			<p class="uk-text-justify uk-text-meta">
-				By installing our browser extension you agree that reading our simplified summaries
-				<e>IS NOT
-				</e>
-				a substitute for reading the source documents in their entirety. We do not guarantee that any of our simplified summaries
-				reflect the source documents from which they were summarized from in any way, shape or form. We disclaim all liability
-				for damages of any kind which may arise from using, reading, referencing, or relying on any or all of our simplified
+				We do not guarantee that any of our simplified summaries reflect the source documents from which they were summarized from
+				in any way, shape or form.
+			</p>
+			<p class="uk-text-justify uk-text-meta">
+				We disclaim all liability for any damages of any kind arising from referencing, relying or sharing any of our simplified
 				summaries of documents.
 			</p>
 		</div>
@@ -442,21 +446,30 @@
 					</div>
 					<div class="uk-text-center">
 						<ul class="uk-iconnav">
+
 							<li>
-								<a href="#" uk-icon="icon: facebook" class="uk-icon-link"></a>
+								<a href="#">
+									<i class="fab fa-facebook-f fa-fw fa-lg"></i>
+								</a>
 							</li>
 							<li>
-								<a href="#" uk-icon="icon: twitter" class="uk-icon-link"></a>
+								<a href="#">
+									<i class="fab fa-twitter fa-fw fa-lg"></i>
+								</a>
 							</li>
 							<li>
-								<a href="#" uk-icon="icon: youtube" class="uk-icon-link"></a>
+								<a href="#">
+									<i class="fab fa-youtube fa-fw fa-lg"></i>
+								</a>
 							</li>
 							<li>
-								<a href="#" uk-icon="icon: wordpress" class="uk-icon-link"></a>
+								<a href="#">
+									<i class="fab fa-medium-m fa-fw fa-lg"></i>
+								</a>
 							</li>
 
 						</ul>
-						<div class="uk-text-meta">
+						<div class="uk-text-meta" style="font-size: 0.8rem">
 							coming soon
 						</div>
 
@@ -473,6 +486,7 @@
 	<!-- UIkit JS -->
 	<script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
 	<script src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+
 </body>
 
 </html>
