@@ -8,11 +8,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-#coming-soon {
-  font-size: 0.8rem;
-  /* font-style: italic; */
-}
-
 .gradient {
   background: linear-gradient(to right, #e94057, #f27121, #f27121);
 }
