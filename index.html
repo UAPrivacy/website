@@ -481,7 +481,14 @@
 			clipboard.on('error', function (e) {
 				console.log(e);
 			});
+			clipboard.on('success', function (e) {
+				UIkit.tooltip(emailTooltipEl, {
+					title: "Copied: info@uaprivacy.com"
+				}).show()
+				console.log(e);
+			});
 			emailTooltipEl.addEventListener('click', function (e) {
+				// UIkit.tooltip(emailTooltipEl).hide()
 				UIkit.tooltip(emailTooltipEl, {
 					title: "Copied: info@uaprivacy.com"
 				}).show()
