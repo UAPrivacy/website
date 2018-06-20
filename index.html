@@ -12,8 +12,8 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/fav-icon.png">
 	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" as="style">
-	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" as="style">
+	<link rel="preload" href="./node_modules/uikit/dist/css/uikit-core.min.css" as="style">
+	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="preload" as="style">
 	<!-- local styles -->
 	<link rel="stylesheet" href="./style.css">
 	<!-- Fix Internet Explorer ______________________________________-->
@@ -184,8 +184,9 @@
 
 			<div class="uk-child-width-1-2@m uk-visible@m" uk-grid>
 				<div>
-					<img src="images/icon4.png" class="uk-width-medium" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
-
+					<div>
+						<img src="images/icon4.png" class="uk-width-medium" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
+					</div>
 				</div>
 
 				<div uk-scrollspy="cls: uk-animation-slide-right" class="uk-text-left@m">
@@ -419,7 +420,7 @@
 			</div>
 		</div>
 	</div>
-	</div>
+
 	<!-- LEGAL DISCLAIMER -->
 	<div class="uk-section uk-section-default">
 		<div class="uk-container" uk-scrollspy="uk-animation-shake">
