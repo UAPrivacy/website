@@ -11,7 +11,8 @@
     "start": "serve .",
     "build": "parcel build index.html --public-url ./",
     "dev": "parcel index.html",
-    "clear": "rm -rf dist/ .cache"
+    "clear": "rm -rf dist/ .cache",
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "uikit": "^3.0.0-rc.6"
