@@ -15,10 +15,10 @@
     "deploy": "./deploy.sh"
   },
   "dependencies": {
-    "uikit": "^3.0.0-rc.6"
+    "uikit": "^3.0.0-rc.10"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.9.2",
+    "parcel-bundler": "^1.9.7",
     "serve": "^8.2.0"
   },
   "private": true,
