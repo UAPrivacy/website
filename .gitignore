@@ -2,6 +2,8 @@ node_modules
 dist
 .cache
 
+.deploy.sh
+
 # OS generated files
 .DS_Store
 .DS_Store?
