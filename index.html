@@ -21,6 +21,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" lazyload>
 	<!-- local styles -->
 	<link rel="stylesheet" href="./style.css">
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jpamagahompdloolgpfbpeponjdeljbe">
+
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,8 +60,8 @@
 					</p>
 					<a href="https://chrome.google.com/webstore/detail/uaprivacy/jpamagahompdloolgpfbpeponjdeljbe" target="_blank" class="uk-button uk-button-danger uk-text-uppercase">
 						<i class="fab fa-chrome fa-fw"></i> Download free beta</a>
-					<a href="https://chrome.google.com/webstore/detail/uaprivacy/jpamagahompdloolgpfbpeponjdeljbe" target="_blank" class="uk-button uk-button-default uk-text-uppercase">
-						<i class="fas fa-cloud-download-alt fa-fw"></i> Install now</a>
+					<!-- <button id="install-button" onclick="chrome.webstore.install()" class="uk-button uk-button-default uk-text-uppercase">
+						<i class="fas fa-cloud-download-alt fa-fw"></i> Install now</button> -->
 
 				</div>
 			</div>
@@ -224,7 +226,7 @@
 	<div class="uk-section uk-section-secondary uk-section-large uk-light">
 		<div class="uk-container">
 			<h1 class="uk-text-center uk-margin-large-bottom uk-margin-remove-bottom">
-				Engage with legal policies as you browse
+				Engage with legal documents as you browse
 			</h1>
 			<div class="uk-visible@m uk-margin-large-top">
 				<div uk-grid class="uk-flex-center uk-transition-toggle" uk-scrollspy="cls: uk-animation-scale-up">
@@ -442,25 +444,22 @@
 						<ul class="uk-iconnav">
 
 							<li>
-								<a href="#">
+								<a href="https://www.facebook.com/UAprivacy/" target="_blank">
 									<i class="fab fa-facebook-f fa-fw fa-lg"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="https://twitter.com/uaprivacy" target="_blank">
 									<i class="fab fa-twitter fa-fw fa-lg"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="https://medium.com/uaprivacy" target="_blank">
 									<i class="fab fa-medium-m fa-fw fa-lg"></i>
 								</a>
 							</li>
 
 						</ul>
-						<div class="uk-text-meta" style="font-size: 0.8rem">
-							coming soon
-						</div>
 
 					</div>
 					<div>
@@ -496,6 +495,9 @@
 			}
 			emailTooltipEl.onmouseout = function (e) {
 				UIkit.tooltip(emailTooltipEl, {}).hide()
+			}
+			if (chrome.app.isInstalled) {
+				document.getElementById('install-button').style.display = 'none';
 			}
 		});
 
