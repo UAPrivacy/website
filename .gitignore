@@ -1,7 +1,6 @@
 node_modules
 dist
 .cache
-
 .deploy.sh
 
 # OS generated files

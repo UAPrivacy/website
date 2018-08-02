@@ -1,31 +1,31 @@
 {
-  "name": "website",
-  "version": "1.0.0",
+  "author": {
+    "email": "info@uaprivacy.com",
+    "name": "uaprivacy",
+    "url": "https://www.uaprivacy.com"
+  },
+  "dependencies": {
+    "uikit": "^3.0.0-rc.10"
+  },
   "description": "uaprivacy.com website",
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7",
+    "serve": "^8.2.0"
+  },
+  "license": "UNLICENSED",
   "main": "index.html",
+  "name": "website",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/UAPrivacy/website.git"
   },
   "scripts": {
-    "start": "serve .",
     "build": "npm run clear && parcel build index.html --public-url ./",
-    "dev": "parcel index.html",
     "clear": "rm -rf dist/ .cache",
-    "deploy": "npm run build && ./deploy.sh"
+    "deploy": "npm run build && ./deploy.sh",
+    "dev": "parcel index.html",
+    "start": "serve ."
   },
-  "dependencies": {
-    "uikit": "^3.0.0-rc.10"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.9.7",
-    "serve": "^8.2.0"
-  },
-  "private": true,
-  "license": "UNLICENSED",
-  "author": {
-    "name": "uaprivacy",
-    "email": "info@uaprivacy.com",
-    "url": "https://www.uaprivacy.com"
-  }
+  "version": "1.0.0"
 }
