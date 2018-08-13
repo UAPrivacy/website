@@ -1,538 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<!-- For IE -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- For Responsive Device -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>UAPrivacy - Making User Agreements &amp; Privacy Understandable
-		</title>
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="images/fav-icon.png">
-		<!-- styles -->
-		<link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" media="none" onload="if(media!='all')media='all'">
-		<noscript>
-			<link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css">
-		</noscript>
-		<!-- <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" as="style"> -->
-		<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" as="style">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" lazyload>
-		<!-- local styles -->
-		<link rel="stylesheet" href="./style.css">
-		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jpamagahompdloolgpfbpeponjdeljbe">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Responsive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAPrivacy - Making User Agreements &amp; Privacy Understandable
+    </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/fav-icon.png">
+    <!-- styles -->
+    <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+      <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css">
+    </noscript>
+    <!-- <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" as="style"> -->
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" lazyload>
+    <!-- local styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jpamagahompdloolgpfbpeponjdeljbe">
 
-		<!-- Fix Internet Explorer ______________________________________-->
-		<!--[if lt IE 9]>
+    <!-- Fix Internet Explorer ______________________________________-->
+    <!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script sr8c="vendor/html5shiv.js"></script>
 			<script src="vendor/respond.js"></script>
 		<![endif]-->
-	</head>
+  </head>
 
-	<body>
-		<!-- HEADER -->
-		<header>
-			<div class="uk-cover-container uk-inline uk-light">
-				<!-- hack -->
-				<canvas width="19200" height="10000"></canvas>
-				<img src="./images/pic5-cropped.jpg" alt="" uk-cover>
-				<div class="uk-overlay-primary uk-position-cover"></div>
-				<div class="uk-overlay uk-position-top uk-flex uk-flex-center uk-flex-left@m">
-					<a class="uk-logo" href="/">
-						<img src="./images/logo.png" width="200" alt="">
-					</a>
-				</div>
-				<div class="uk-hidden@m uk-overlay uk-position-bottom uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-fade">
-					<h1 class="uk-text-center white-text uk-h2">Making User Agreements Understandable
-					</h1>
-				</div>
-				<div class="uk-visible@m uk-overlay uk-position-left uk-flex uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
-					<div>
-						<h1 class="uk-heading-primary font-weight-200 uk-margin">Making User Agreements
-							<br> Understandable
-						</h1>
-						<p class="uk-text-lead uk-text-bold uk-margin sub-header">
-							Showing the important bits of User Agreements
-							<br> &amp; Privacy Policy for the website you are browsing.
-						</p>
-						<a href="https://chrome.google.com/webstore/detail/uaprivacy/jpamagahompdloolgpfbpeponjdeljbe" target="_blank" class="uk-button uk-button-danger uk-text-uppercase">
-							<i class="fab fa-chrome fa-fw"></i> Download free beta</a>
-					</div>
-				</div>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="uk-cover-container uk-inline uk-light">
+        <!-- hack -->
+        <canvas width="19200" height="10000"></canvas>
+        <img src="./images/pic5-cropped.jpg" alt="" uk-cover>
+        <div class="uk-overlay-primary uk-position-cover"></div>
+        <div class="uk-overlay uk-position-top uk-flex uk-flex-center uk-flex-left@m">
+          <a class="uk-logo" href="/">
+            <img src="./images/logo.png" width="200" alt="">
+          </a>
+        </div>
+        <div class="uk-hidden@m uk-overlay uk-position-bottom uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-fade">
+          <h1 class="uk-text-center white-text uk-h2">Making User Agreements Understandable
+          </h1>
+        </div>
+        <div class="uk-visible@m uk-overlay uk-position-left uk-flex uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
+          <div>
+            <h1 class="uk-heading-primary font-weight-200 uk-margin">Making User Agreements
+              <br> Understandable
+            </h1>
+            <p class="uk-text-lead uk-text-bold uk-margin sub-header">
+              Showing the important bits of User Agreements
+              <br> &amp; Privacy Policy for the website you are browsing.
+            </p>
+            <a href="https://chrome.google.com/webstore/detail/uaprivacy/jpamagahompdloolgpfbpeponjdeljbe" target="_blank" class="uk-button uk-button-danger uk-text-uppercase">
+              <i class="fab fa-chrome fa-fw"></i> Download free beta</a>
+          </div>
+        </div>
 
-				<div class="uk-visible@l uk-position-right uk-overlay uk-overlay-primary uk-flex  uk-flex-center uk-flex-column uk-flex-middle uk-text-center"
-				    uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 2000">
-					<div>
-						<img src=" ./images/racoon-logo-light.png " width="380px" alt=" ">
-					</div>
-					<div>
-						<p class="uk-text-lead">User-friendly terms & policies</p>
+        <div class="uk-visible@l uk-position-right uk-overlay uk-overlay-primary uk-flex  uk-flex-center uk-flex-column uk-flex-middle uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 2000">
+          <div>
+            <img src=" ./images/racoon-logo-light.png " width="380px" alt=" ">
+          </div>
+          <div>
+            <p class="uk-text-lead">User-friendly terms & policies</p>
 
-						<p class="uk-h5 font-weight-200">
-							Clarifying expectations between
-							<br> users and companies.
-						</p>
-					</div>
+            <p class="uk-h5 font-weight-200">
+              Clarifying expectations between
+              <br> users and companies.
+            </p>
+          </div>
 
-				</div>
-			</div>
-		</header>
-		<!-- WHAT YOU GET -->
-		<div class="uk-section uk-section-muted">
-			<div class="uk-container uk-text-center ">
-				<h2 class="uk-heading-line uk-text-center uk-text-uppercase ">
-					<span>what you get
-					</span>
-				</h2>
-				<div class="uk-grid-match uk-child-width-1-3@m " uk-grid uk-scrollspy="cls: uk-animation-scale-up; target:> div > .uk-card; delay: 400">
-					<div>
-						<div class="uk-card uk-box-shadow-hover-small">
-							<div class="uk-card-header uk-transition-toggle">
-								<img src="images/icon15.png " class="uk-width-small uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
-							<div class="uk-card-body ">
-								<h3 class="uk-card-title ">Summarized</h3>
-								<p>Summary of what's important.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-box-shadow-hover-small">
-							<div class="uk-card-header uk-transition-toggle">
-								<img src="images/icon34.png" class="uk-width-small uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title ">Simplified</h3>
-								<p>Jargon is replaced with familiar words.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-box-shadow-hover-small">
-							<div class="uk-card-header uk-transition-toggle">
-								<img src="images/icon4.png" class="uk-width-small uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
-							<div class="uk-card-body ">
-								<h3 class="uk-card-title ">Convenient</h3>
-								<p>Made available while you browse.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        </div>
+      </div>
+    </header>
+    <!-- WHAT YOU GET -->
+    <div class="uk-section uk-section-muted">
+      <div class="uk-container uk-text-center ">
+        <h2 class="uk-heading-line uk-text-center uk-text-uppercase ">
+          <span>what you get
+          </span>
+        </h2>
+        <div class="uk-grid-match uk-child-width-1-3@m " uk-grid uk-scrollspy="cls: uk-animation-scale-up; target:> div > .uk-card; delay: 400">
+          <div>
+            <div class="uk-card uk-box-shadow-hover-small">
+              <div class="uk-card-header uk-transition-toggle">
+                <img src="images/icon15.png " class="uk-width-small uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
+              <div class="uk-card-body ">
+                <h3 class="uk-card-title ">Summarized</h3>
+                <p>Summary of what's important.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-box-shadow-hover-small">
+              <div class="uk-card-header uk-transition-toggle">
+                <img src="images/icon34.png" class="uk-width-small uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title ">Simplified</h3>
+                <p>Jargon is replaced with familiar words.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-box-shadow-hover-small">
+              <div class="uk-card-header uk-transition-toggle">
+                <img src="images/icon4.png" class="uk-width-small uk-transition-scale-up uk-transition-opaque" alt=" "> </div>
+              <div class="uk-card-body ">
+                <h3 class="uk-card-title ">Convenient</h3>
+                <p>Made available while you browse.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- BE AWARE -->
-		<div class="uk-section uk-section-default uk-section-large">
-			<div class="uk-container uk-text-center">
+    <!-- BE AWARE -->
+    <div class="uk-section uk-section-default uk-section-large">
+      <div class="uk-container uk-text-center">
 
-				<div class="uk-child-width-1-2@m uk-hidden@m" uk-grid>
-					<div>
-						<img src="images/pic7.jpg" class="uk-border-rounded uk-width-large" alt=" " uk-scrollspy="cls: uk-animation-scale-down">
-					</div>
-					<div class="uk-text-left" uk-scrollspy="cls: uk-animation-scale-up; target: *; delay: 300">
-						<h2 class="uk-text-muted uk-heading-bullet uk-text-left@m">
-							Be aware what you agree to
-						</h2>
-						<p>
-							<span uk-icon="icon: check; ratio: 2"></span> Know their User Agreements.
-							<em>Easily</em>.
-						</p>
-						<p>
-							<span uk-icon="icon: check; ratio: 2"></span> Know their Privacy Policy.
-							<em>Conveniently</em>.
-						</p>
-						<p>
-							<span uk-icon="icon: check; ratio: 2"></span> Know their Terms of Service.
-							<em>On-demand</em>.</p>
-					</div>
-				</div>
+        <div class="uk-child-width-1-2@m uk-hidden@m" uk-grid>
+          <div>
+            <img src="images/pic7.jpg" class="uk-border-rounded uk-width-large" alt=" " uk-scrollspy="cls: uk-animation-scale-down">
+          </div>
+          <div class="uk-text-left" uk-scrollspy="cls: uk-animation-scale-up; target: *; delay: 300">
+            <h2 class="uk-text-muted uk-heading-bullet uk-text-left@m">
+              Be aware what you agree to
+            </h2>
+            <p>
+              <span uk-icon="icon: check; ratio: 2"></span> Know their User Agreements.
+              <em>Easily</em>.
+            </p>
+            <p>
+              <span uk-icon="icon: check; ratio: 2"></span> Know their Privacy Policy.
+              <em>Conveniently</em>.
+            </p>
+            <p>
+              <span uk-icon="icon: check; ratio: 2"></span> Know their Terms of Service.
+              <em>On-demand</em>.</p>
+          </div>
+        </div>
 
-				<div class="uk-child-width-1-2@m uk-visible@m" uk-grid>
-					<div class="uk-transition-toggle">
-						<div class="uk-transition-scale-up uk-transition-opaque">
-							<img src="images/pic7.jpg" class="uk-border-rounded uk-width-large" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
-						</div>
-					</div>
+        <div class="uk-child-width-1-2@m uk-visible@m" uk-grid>
+          <div class="uk-transition-toggle">
+            <div class="uk-transition-scale-up uk-transition-opaque">
+              <img src="images/pic7.jpg" class="uk-border-rounded uk-width-large" alt=" " uk-scrollspy="cls: uk-animation-slide-left">
+            </div>
+          </div>
 
-					<div uk-scrollspy="cls: uk-animation-slide-right" class="uk-text-left@m">
-						<h2 class="uk-text-muted uk-heading-bullet uk-text-left@m">
-							Be aware what you agree to
-						</h2>
-						<p>
-							<span uk-icon="icon: check; ratio: 2"></span> Know their User Agreements.
-							<em>Easily</em>.
-						</p>
-						<p>
-							<span uk-icon="icon: check; ratio: 2"></span> Know their Privacy Policy.
-							<em>Conveniently</em>.
-						</p>
-						<p>
-							<span uk-icon="icon: check; ratio: 2"></span> Know their Terms of Service.
-							<em>On-demand</em>.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div uk-scrollspy="cls: uk-animation-slide-right" class="uk-text-left@m">
+            <h2 class="uk-text-muted uk-heading-bullet uk-text-left@m">
+              Be aware what you agree to
+            </h2>
+            <p>
+              <span uk-icon="icon: check; ratio: 2"></span> Know their User Agreements.
+              <em>Easily</em>.
+            </p>
+            <p>
+              <span uk-icon="icon: check; ratio: 2"></span> Know their Privacy Policy.
+              <em>Conveniently</em>.
+            </p>
+            <p>
+              <span uk-icon="icon: check; ratio: 2"></span> Know their Terms of Service.
+              <em>On-demand</em>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- ENGAGE -->
-		<div class="uk-section uk-section-secondary uk-section-large uk-light">
-			<div class="uk-container">
-				<h1 class="uk-text-center uk-margin-large-bottom uk-margin-remove-bottom">
-					Engage with terms and policies as you browse
-				</h1>
-				<div class="uk-visible@m uk-margin-large-top">
-					<div uk-grid class="uk-flex-center uk-transition-toggle" uk-scrollspy="cls: uk-animation-scale-up">
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Up-to-date user agreements &amp; privacy policies
-						</p>
-					</div>
-					<div uk-grid>
-						<div class="uk-child-width-1-1 uk-text-right" uk-grid uk-scrollspy="cls: uk-animation-scale-up">
-							<div class="uk-transition-toggle">
-								<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Summarized
-								</p>
-							</div>
-							<div class="uk-transition-toggle">
-								<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Presented conveniently
-								</p>
-							</div>
-						</div>
-						<div class="uk-width-expand" uk-scrollspy="cls: uk-animation-scale-up">
-							<img src="images/pic6.jpg" class="uk-border-rounded" alt=""> </div>
-						<div class="uk-child-width-1-1 " uk-grid uk-scrollspy="cls: uk-animation-scale-up">
-							<div class="uk-transition-toggle">
+    <!-- ENGAGE -->
+    <div class="uk-section uk-section-secondary uk-section-large uk-light">
+      <div class="uk-container">
+        <h1 class="uk-text-center uk-margin-large-bottom uk-margin-remove-bottom">
+          Engage with terms and policies as you browse
+        </h1>
+        <div class="uk-visible@m uk-margin-large-top">
+          <div uk-grid class="uk-flex-center uk-transition-toggle" uk-scrollspy="cls: uk-animation-scale-up">
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Up-to-date user agreements &amp; privacy policies
+            </p>
+          </div>
+          <div uk-grid>
+            <div class="uk-child-width-1-1 uk-text-right" uk-grid uk-scrollspy="cls: uk-animation-scale-up">
+              <div class="uk-transition-toggle">
+                <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Summarized
+                </p>
+              </div>
+              <div class="uk-transition-toggle">
+                <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Presented conveniently
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-expand" uk-scrollspy="cls: uk-animation-scale-up">
+              <img src="images/pic6.jpg" class="uk-border-rounded" alt=""> </div>
+            <div class="uk-child-width-1-1 " uk-grid uk-scrollspy="cls: uk-animation-scale-up">
+              <div class="uk-transition-toggle">
 
-								<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Simplified</p>
-							</div>
-							<div class="uk-transition-toggle">
-								<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Whenever you need them
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="uk-hidden@m uk-margin-large-top uk-width-auto uk-text-center" uk-scrollspy="cls:uk-animation-fade; target: div > p; delay: 400">
-					<div>
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">User Agreements &amp; Privacy Policies
-						</p>
-					</div>
-					<div>
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Summarized
-						</p>
-					</div>
+                <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Simplified</p>
+              </div>
+              <div class="uk-transition-toggle">
+                <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Whenever you need them
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-hidden@m uk-margin-large-top uk-width-auto uk-text-center" uk-scrollspy="cls:uk-animation-fade; target: div > p; delay: 400">
+          <div>
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">User Agreements &amp; Privacy Policies
+            </p>
+          </div>
+          <div>
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Summarized
+            </p>
+          </div>
 
-					<div>
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Simplified</p>
-					</div>
+          <div>
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Simplified</p>
+          </div>
 
-					<div>
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Presented conveniently
-						</p>
-					</div>
+          <div>
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Presented conveniently
+            </p>
+          </div>
 
-					<div>
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Whenever you need them
-						</p>
-					</div>
-					<div>
-						<p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Up-to-date
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div>
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Whenever you need them
+            </p>
+          </div>
+          <div>
+            <p class="uk-badge uk-padding-small uk-transition-scale-up uk-transition-opaque">Up-to-date
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- SUBSCRIBE -->
-		<div class="uk-section uk-section-default uk-section-large" hidden>
-			<div class="uk-container">
-				<h1 class="uk-text-center">Subscribe to stay updated!
-				</h1>
-				<form class="uk-grid-small" uk-grid>
-					<div class="uk-width-expand@m">
-						<input class="uk-input uk-form-large" type="text" name="name" placeholder="Full Name*" required>
-					</div>
-					<div class="uk-width-expand@m">
-						<input class="uk-input uk-form-large" type="text" name="email" placeholder="Email Address*" required>
-					</div>
-					<div class="uk-width-auto@m">
-						<input class="uk-button uk-button-large uk-button-primary uk-text-uppercase" type="submit" value="sign up">
-					</div>
-				</form>
-			</div>
-		</div>
+    <!-- SUBSCRIBE -->
+    <div class="uk-section uk-section-default uk-section-large" hidden>
+      <div class="uk-container">
+        <h1 class="uk-text-center">Subscribe to stay updated!
+        </h1>
+        <form class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand@m">
+            <input class="uk-input uk-form-large" type="text" name="name" placeholder="Full Name*" required>
+          </div>
+          <div class="uk-width-expand@m">
+            <input class="uk-input uk-form-large" type="text" name="email" placeholder="Email Address*" required>
+          </div>
+          <div class="uk-width-auto@m">
+            <input class="uk-button uk-button-large uk-button-primary uk-text-uppercase" type="submit" value="sign up">
+          </div>
+        </form>
+      </div>
+    </div>
 
-		<!-- Screenshots -->
-		<div class="uk-section uk-section-muted gradient-other uk-section-large" hidden>
-			<div class="uk-container">
-				<h1 class="uk-text-center uk-light white-text">Screenshots
-				</h1>
+    <!-- SCREENSHOTS -->
+    <div class="uk-section uk-section-muted gradient-other uk-section-large" hidden>
+      <div class="uk-container">
+        <h1 class="uk-text-center uk-light white-text">Screenshots
+        </h1>
 
-				<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: pull; autoplay: true; autoplay-interval: 3000">
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: pull; autoplay: true; autoplay-interval: 3000">
 
-					<ul class="uk-slideshow-items">
-						<li>
-							<img src="images/screenshots2.png" class="uk-border-rounded" alt="" uk-cover>
-						</li>
-						<li>
-							<img src="images/screenshots3.png" class="uk-border-rounded" alt="" uk-cover>
-						</li>
-						<li>
-							<img src="images/screenshots1.png" class="uk-border-rounded" alt="" uk-cover>
-						</li>
-					</ul>
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="images/screenshots2.png" class="uk-border-rounded" alt="" uk-cover>
+            </li>
+            <li>
+              <img src="images/screenshots3.png" class="uk-border-rounded" alt="" uk-cover>
+            </li>
+            <li>
+              <img src="images/screenshots1.png" class="uk-border-rounded" alt="" uk-cover>
+            </li>
+          </ul>
 
-					<a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-					<a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+          <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
-				</div>
+        </div>
 
-			</div>
-		</div>
-		<!-- INSTALL NOW -->
-		<div class="uk-section uk-section-default uk-section-large uk-hidden-touch">
-			<div class="uk-container">
-				<h1 class="uk-text-center">Give it a try? It's free!
-				</h1>
-				<div class="uk-text-center">
-					<button id="install-button" onclick="chrome.webstore.install()" class="uk-button uk-button-danger uk-button-large uk-text-uppercase">
-						<i class="fas fa-cloud-download-alt fa-fw"></i> Install now</button>
-				</div>
-			</div>
-		</div>
-		<!-- COUNTDOWN -->
-		<div class="uk-section uk-section-default uk-section-large" hidden>
-			<div class="uk-container">
-				<h5 class="uk-text-uppercase uk-text-center">Countdown to
-					<b>FREE</b>
-					Beta Release
-				</h5>
-				<div class="uk-grid-small uk-child-width-auto uk-text-small uk-flex-center" uk-grid uk-countdown="date: 2018-06-30T07:07:16+00:00">
-					<div>
-						<div class="uk-countdown-number uk-countdown-days"></div>
-						<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
-					</div>
-					<div class="uk-countdown-separator">:</div>
-					<div>
-						<div class="uk-countdown-number uk-countdown-hours"></div>
-						<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
-					</div>
-					<div class="uk-countdown-separator">:</div>
-					<div>
-						<div class="uk-countdown-number uk-countdown-minutes"></div>
-						<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
-					</div>
-					<div class="uk-countdown-separator">:</div>
-					<div>
-						<div class="uk-countdown-number uk-countdown-seconds"></div>
-						<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- TEAM -->
-		<div class="uk-section uk-section-default uk-section-large" hidden>
-			<div class="uk-container uk-text-center">
-				<h2 class="uk-heading-line uk-text-muted uk-text-uppercase uk-h3">
-					<span>Team</span>
-				</h2>
-				<div class="uk-grid-match uk-child-width-1-2@m " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > div.uk-card > div.uk-card-header > div > img; delay: 300">
-					<div>
-						<div class="uk-card" uk-card-default>
-							<div class="uk-card-header">
-								<div class="uk-width-auto">
-									<img class="uk-border-rounded" width="300" src="./images/team4-alt.jpg"> </div>
-								<h3 class="uk-card-title uk-margin-remove-adjacent">Samuel Karani
-								</h3>
-								<h5 class="uk-text-uppercase uk-text-meta">Founder</h5>
-								<p>UC Berkeley '17
-								</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card" uk-card-default>
-							<div class="uk-card-header">
-								<div class="uk-width-auto">
-									<img class="uk-border-circle" width="300" src="./images/team3.jpg"> </div>
-								<h3 class="uk-card-title uk-margin-remove-adjacent">Arnold Mac-Ebong
-								</h3>
-								<h5 class="uk-text-uppercase uk-text-meta">Co-Founder</h5>
-								<p>UC Berkeley '18
-								</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card" uk-card-default>
-							<div class="uk-card-header">
-								<div class="uk-width-auto">
-									<img class="uk-border-circle" width="300" src="./images/team2.jpg"> </div>
-								<h3 class="uk-card-title uk-margin-remove-adjacent">Victor Korir
-								</h3>
-								<h5 class="uk-text-uppercase uk-text-meta">Technical</h5>
-								<p>UC Berkeley '19
-								</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card" uk-card-default>
-							<div class="uk-card-header">
-								<div class="uk-width-auto">
-									<img class="uk-border-rounded" width="300" src="./images/team1.jpg"> </div>
-								<h3 class="uk-card-title uk-margin-remove-adjacent">Alex Mutwiri
-								</h3>
-								<h5 class="uk-text-uppercase uk-text-meta">Technical</h5>
-								<p>UC Berkeley '20
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<!-- PHILOSOPHY -->
-		<div class="uk-section uk-section-primary uk-section-large uk-light gradient" hidden>
-			<div class="uk-container" uk-scrollspy="cls: uk-animation-fade; target: > * ; delay: 500">
-				<h1 class=" uk-text-center">Our Philosophy
-				</h1>
+    <!-- STATISTICS -->
+    <div class="uk-section uk-section-primary uk-section-large uk-hidden-touch">
+      <div class="uk-container">
+        <h1 class="uk-text-center">
+          <strong>1,000,000</strong> websites summarized.
+        </h1>
 
-				<p class="uk-dropcap white-text">
-					The assumption that most people do not care about User Agreements or Privacy Policies is both inaccurate and incomplete.
-					Usually the terms and policies are lengthy and full of jargon, and are delivered in a way that hinders almost everyone
-					from reading and understanding the key details. Our endeavor is to present summaries of these legal documents in a simplified,
-					convenient and understandable manner.
-				</p>
-			</div>
-		</div>
+      </div>
+    </div>
+    <!-- INSTALL NOW -->
+    <div class="uk-section uk-section-default uk-section-large uk-hidden-touch">
+      <div class="uk-container">
+        <h1 class="uk-text-center">Give it a try? It's free!
+        </h1>
+        <div class="uk-text-center">
+          <button id="install-button" onclick="chrome.webstore.install()" class="uk-button uk-button-danger uk-button-large uk-text-uppercase">
+            <i class="fas fa-cloud-download-alt fa-fw"></i> Install now</button>
+        </div>
+      </div>
+    </div>
+    <!-- COUNTDOWN -->
+    <div class="uk-section uk-section-default uk-section-large" hidden>
+      <div class="uk-container">
+        <h5 class="uk-text-uppercase uk-text-center">Countdown to
+          <b>FREE</b> Beta Release
+        </h5>
+        <div class="uk-grid-small uk-child-width-auto uk-text-small uk-flex-center" uk-grid uk-countdown="date: 2018-06-30T07:07:16+00:00">
+          <div>
+            <div class="uk-countdown-number uk-countdown-days"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+          </div>
+          <div class="uk-countdown-separator">:</div>
+          <div>
+            <div class="uk-countdown-number uk-countdown-hours"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+          </div>
+          <div class="uk-countdown-separator">:</div>
+          <div>
+            <div class="uk-countdown-number uk-countdown-minutes"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+          </div>
+          <div class="uk-countdown-separator">:</div>
+          <div>
+            <div class="uk-countdown-number uk-countdown-seconds"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TEAM -->
+    <div class="uk-section uk-section-default uk-section-large" hidden>
+      <div class="uk-container uk-text-center">
+        <h2 class="uk-heading-line uk-text-muted uk-text-uppercase uk-h3">
+          <span>Team</span>
+        </h2>
+        <div class="uk-grid-match uk-child-width-1-2@m " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > div.uk-card > div.uk-card-header > div > img; delay: 300">
+          <div>
+            <div class="uk-card" uk-card-default>
+              <div class="uk-card-header">
+                <div class="uk-width-auto">
+                  <img class="uk-border-rounded" width="300" src="./images/team4-alt.jpg"> </div>
+                <h3 class="uk-card-title uk-margin-remove-adjacent">Samuel Karani
+                </h3>
+                <h5 class="uk-text-uppercase uk-text-meta">Founder</h5>
+                <p>UC Berkeley '17
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card" uk-card-default>
+              <div class="uk-card-header">
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="300" src="./images/team3.jpg"> </div>
+                <h3 class="uk-card-title uk-margin-remove-adjacent">Arnold Mac-Ebong
+                </h3>
+                <h5 class="uk-text-uppercase uk-text-meta">Co-Founder</h5>
+                <p>UC Berkeley '18
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card" uk-card-default>
+              <div class="uk-card-header">
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="300" src="./images/team2.jpg"> </div>
+                <h3 class="uk-card-title uk-margin-remove-adjacent">Victor Korir
+                </h3>
+                <h5 class="uk-text-uppercase uk-text-meta">Technical</h5>
+                <p>UC Berkeley '19
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card" uk-card-default>
+              <div class="uk-card-header">
+                <div class="uk-width-auto">
+                  <img class="uk-border-rounded" width="300" src="./images/team1.jpg"> </div>
+                <h3 class="uk-card-title uk-margin-remove-adjacent">Alex Mutwiri
+                </h3>
+                <h5 class="uk-text-uppercase uk-text-meta">Technical</h5>
+                <p>UC Berkeley '20
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- QUOTE -->
-		<div class="uk-section uk-section-muted uk-section-large">
-			<div class="uk-container" uk-scrollspy="cls: uk-animation-fade; target: > *;">
+    <!-- PHILOSOPHY -->
+    <div class="uk-section uk-section-primary uk-section-large uk-light gradient" hidden>
+      <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; target: > * ; delay: 500">
+        <h1 class=" uk-text-center">Our Philosophy
+        </h1>
 
-				<blockquote cite="#">
-					<p class="uk-margin-small-bottom">More than 88% of people never read the terms or policies of websites they use. With our browser extension, you can instantly
-						see the summarized user agreement & privacy policy for the website you are browsing.</p>
-					<footer>—Co-founder of
-						<cite>
-							<a href="#">UAPrivacy</a>
-						</cite>
-					</footer>
-				</blockquote>
-			</div>
-		</div>
+        <p class="uk-dropcap white-text">
+          The assumption that most people do not care about User Agreements or Privacy Policies is both inaccurate and incomplete. Usually the terms and policies are lengthy and full of jargon, and are delivered in a way that hinders almost everyone from reading
+          and understanding the key details. Our endeavor is to present summaries of these legal documents in a simplified, convenient and understandable manner.
+        </p>
+      </div>
+    </div>
 
-		<!-- CONTACT US -->
-		<div class="uk-section uk-section-primary uk-light">
-			<div class="uk-container">
-				<h1 class="uk-text-capitalize uk-text-center">contact us
-				</h1>
-				<div class="uk-child-width-1-2@m uk-flex-middle" uk-grid></div>
+    <!-- QUOTE -->
+    <div class="uk-section uk-section-muted uk-section-large">
+      <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; target: > *;">
 
-				<div class="uk-text-center">
-					<h2 class="font-weight-200">Don’t hesitate to get in touch
-					</h2>
-					<h5>
+        <blockquote cite="#">
+          <p class="uk-margin-small-bottom">More than 88% of people never read the terms or policies of websites they use. With our browser extension, you can instantly see the summarized user agreement & privacy policy for the website you are browsing.</p>
+          <footer>—Co-founder of
+            <cite>
+              <a href="#">UAPrivacy</a>
+            </cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
 
-						We'll respond within
-						<strong>24</strong>
-						hours</h5>
-					<h4>
-						<a href="mailto:info@uaprivacy.com" id="email">info@uaprivacy.com</a>
-						<a uk-icon="copy" id="email-tooltip" data-clipboard-target="#email"></a>
-					</h4>
+    <!-- CONTACT US -->
+    <div class="uk-section uk-section-primary uk-light">
+      <div class="uk-container">
+        <h1 class="uk-text-capitalize uk-text-center">contact us
+        </h1>
+        <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid></div>
 
-				</div>
-			</div>
-		</div>
-		<!-- LEGAL DISCLAIMER -->
-		<div class="uk-section uk-section-default">
-			<div class="uk-container" uk-scrollspy="uk-animation-shake">
-				<h1 class="uk-text-capitalize uk-text-center">legal disclaimer
-				</h1>
-				<p class="uk-text-meta uk-text-justify">
-					We do not guarantee that any of our simplified summaries reflect the official source documents, from which they were summarized
-					from, in any way shape or form.
-				</p>
-				<p class="uk-text-meta uk-text-justify">
-					We disclaim all liability for any damages of any kind arising from reading, referencing, relying on or sharing any of our
-					simplified summaries of documents.
-				</p>
-			</div>
-		</div>
-		<hr class="uk-background-muted uk-margin-remove">
-		<!-- FOOTER -->
-		<footer>
-			<div class="uk-section uk-section-muted uk-section-small uk-dark">
-				<div class="uk-container">
-					<div class="uk-flex uk-flex-middle uk-flex-between uk-text-meta">
-						<div> &copy; Copyright UAPrivacy 2018
-						</div>
-						<div class="uk-text-center">
-							<ul class="uk-iconnav">
+        <div class="uk-text-center">
+          <h2 class="font-weight-200">Don’t hesitate to get in touch
+          </h2>
+          <h5>
 
-								<li>
-									<a href="https://www.facebook.com/UAprivacy/" target="_blank">
-										<i class="fab fa-facebook-f fa-fw fa-lg"></i>
-									</a>
-								</li>
-								<li>
-									<a href="https://twitter.com/uaprivacy" target="_blank">
-										<i class="fab fa-twitter fa-fw fa-lg"></i>
-									</a>
-								</li>
-								<li>
-									<a href="https://medium.com/uaprivacy" target="_blank">
-										<i class="fab fa-medium-m fa-fw fa-lg"></i>
-									</a>
-								</li>
+            We'll respond within
+            <strong>24</strong> hours
+          </h5>
+          <h4>
+            <a href="mailto:info@uaprivacy.com" id="email">info@uaprivacy.com</a>
+            <a uk-icon="copy" id="email-tooltip" data-clipboard-target="#email"></a>
+          </h4>
 
-							</ul>
+        </div>
+      </div>
+    </div>
+    <!-- LEGAL DISCLAIMER -->
+    <div class="uk-section uk-section-default">
+      <div class="uk-container" uk-scrollspy="uk-animation-shake">
+        <h1 class="uk-text-capitalize uk-text-center">legal disclaimer
+        </h1>
+        <p class="uk-text-meta uk-text-justify">
+          We do not guarantee that any of our simplified summaries reflect the official source documents, from which they were summarized from, in any way shape or form.
+        </p>
+        <p class="uk-text-meta uk-text-justify">
+          We disclaim all liability for any damages of any kind arising from reading, referencing, relying on or sharing any of our simplified summaries of documents.
+        </p>
+      </div>
+    </div>
+    <hr class="uk-background-muted uk-margin-remove">
+    <!-- FOOTER -->
+    <footer>
+      <div class="uk-section uk-section-muted uk-section-small uk-dark">
+        <div class="uk-container">
+          <div class="uk-flex uk-flex-middle uk-flex-between uk-text-meta">
+            <div> &copy; Copyright UAPrivacy 2018
+            </div>
+            <div class="uk-text-center">
+              <ul class="uk-iconnav">
 
-						</div>
-						<div>
-							<p>
-								<a href="#" uk-totop uk-scroll></a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- UIkit JS -->
-		<script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
-		<script src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function (event) {
-				const emailTooltipEl = document.getElementById("email-tooltip");
-				const clipboard = new Clipboard("#email-tooltip");
-				clipboard.on('error', function (e) {
-					console.log(e);
-				});
-				clipboard.on('success', function (e) {
-					UIkit.tooltip(emailTooltipEl, {
-						title: "Copied: " + e.text
-					}).show()
-					e.clearSelection();
-				});
-				emailTooltipEl.onmouseover = function (e) {
-					UIkit.tooltip(emailTooltipEl, {
-						title: "Copy"
-					}).show()
-				}
-				emailTooltipEl.onmouseout = function (e) {
-					UIkit.tooltip(emailTooltipEl, {}).hide()
-				}
-				if (chrome.app.isInstalled) {
-					document.getElementById('install-button').style.display = 'none';
-				}
-			});
+                <li>
+                  <a href="https://www.facebook.com/UAprivacy/" target="_blank">
+                    <i class="fab fa-facebook-f fa-fw fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/uaprivacy" target="_blank">
+                    <i class="fab fa-twitter fa-fw fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/uaprivacy" target="_blank">
+                    <i class="fab fa-medium-m fa-fw fa-lg"></i>
+                  </a>
+                </li>
 
-		</script>
-	</body>
+              </ul>
+
+            </div>
+            <div>
+              <p>
+                <a href="#" uk-totop uk-scroll></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- UIkit JS -->
+    <script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const emailTooltipEl = document.getElementById("email-tooltip");
+        const clipboard = new Clipboard("#email-tooltip");
+        clipboard.on('error', function(e) {
+          console.log(e);
+        });
+        clipboard.on('success', function(e) {
+          UIkit.tooltip(emailTooltipEl, {
+            title: "Copied: " + e.text
+          }).show()
+          e.clearSelection();
+        });
+        emailTooltipEl.onmouseover = function(e) {
+          UIkit.tooltip(emailTooltipEl, {
+            title: "Copy"
+          }).show()
+        }
+        emailTooltipEl.onmouseout = function(e) {
+          UIkit.tooltip(emailTooltipEl, {}).hide()
+        }
+        if (chrome.app.isInstalled) {
+          document.getElementById('install-button').style.display = 'none';
+        }
+      });
+    </script>
+  </body>
 
 </html>
