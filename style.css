@@ -14,10 +14,6 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(to right, #f77159, #d97667);
-}
-
-.gradient-other {
   background: linear-gradient(to right, #f77159, #DC5E7E);
 }
 
