@@ -2,7 +2,6 @@
 now
 URL=$(pbpaste)
 now alias $URL www.uaprivacy.com
-now alias $URL uaprivacy.com
-now alias $URL www.uaprivacy.org
-now alias $URL uaprivacy.org
-now scale $URL 3 3
+now alias www.uaprivacy.com uaprivacy.com
+now alias www.uaprivacy.com www.uaprivacy.org
+now alias www.uaprivacy.com uaprivacy.org

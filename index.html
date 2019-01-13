@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit-core.min.css" media="none" onload="if(media!='all')media='all'" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" media="none" onload="if(media!='all')media='all'" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" media="none" onload="if(media!='all')media='all'" />
     <link rel="stylesheet" href="./style.css" media="none" onload="if(media!='all')media='all'" />
 
     <noscript>
@@ -24,6 +23,9 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
       <link rel="stylesheet" href="./style.css" />
     </noscript>
+
+    <script defer src="./node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script defer src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
 
     <!-- Fix Internet Explorer ______________________________________ -->
     <!--[if lt IE 9]>
@@ -39,7 +41,9 @@
     <header>
       <div class="uk-cover-container uk-inline uk-light">
         <canvas width="3840" height="2000"></canvas>
-        <img src="./images/pic5-cropped.jpg" alt="" uk-cover />
+        <img src="./images/pic5-cropped.jp2" alt="" uk-cover />
+        <img src="small.jpg" srcset="large.jpg 1024w, medium.jpg 640w, small.jpg 320w" sizes="(min-width: 36em) 33.3vw, 100vw"
+          alt="A rad wolf">
         <div class="uk-overlay-primary uk-position-cover"></div>
         <div class="uk-overlay uk-position-top uk-flex uk-flex-center uk-flex-left@m">
           <a class="uk-logo uk-visible@s">
@@ -156,13 +160,13 @@
         <div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: pull; autoplay: true; autoplay-interval: 3000">
           <ul class="uk-slideshow-items">
             <li>
-              <img src="images/screenshot2.jpg" class="uk-border-rounded" alt="" uk-cover uk-img />
+              <img src="images/screenshot2.jp2" class="uk-border-rounded" alt="" uk-img />
             </li>
             <li>
-              <img src="images/screenshot3.jpg" class="uk-border-rounded" alt="" uk-cover uk-img />
+              <img src="images/screenshot3.jp2" class="uk-border-rounded" alt="" uk-img />
             </li>
             <li>
-              <img src="images/screenshot1.jpg" class="uk-border-rounded" alt="" uk-cover uk-img />
+              <img src="images/screenshot1.jp2" class="uk-border-rounded" alt="" uk-img />
             </li>
           </ul>
           <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -239,7 +243,7 @@
         <div class="uk-text-center">
           <h3 class="font-weight-200">Don’t hesitate to get in touch</h3>
           <h4>
-            <a href="mailto:samiezkay@gmail.com" id="email">samiezkay@gmail.com</a>
+            <a href="mailto:info@uaprivacy.com" id="email">info@uaprivacy.com</a>
             <a uk-icon="copy" id="email-tooltip" data-clipboard-target="#email"></a>
           </h4>
         </div>
@@ -274,8 +278,6 @@
       </div>
     </footer>
 
-    <script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
-    <script src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
