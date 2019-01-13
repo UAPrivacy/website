@@ -1,6 +1,6 @@
 {
 	"headers": [{
-			"source": "**/*.@(jpg|jpeg|gif|png)",
+			"source": "**/*.@(jpg|png)",
 			"headers": [{
 				"key": "Cache-Control",
 				"value": "max-age=31536000"
@@ -15,6 +15,13 @@
 		},
 		{
 			"source": "https://fonts.googleapis.com",
+			"headers": [{
+				"key": "Cache-Control",
+				"value": "max-age=31536000"
+			}]
+		},
+		{
+			"source": "https://use.fontawesome.com",
 			"headers": [{
 				"key": "Cache-Control",
 				"value": "max-age=31536000"

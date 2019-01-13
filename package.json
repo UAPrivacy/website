@@ -17,6 +17,7 @@
     "deploy": "npm run build && ./deploy.sh",
     "dev": "parcel index.html",
     "stage": "npm run build && now",
-    "start": "serve ."
+    "start": "serve .",
+    "now-build": "npm run build"
   }
 }
